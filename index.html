@@ -1,0 +1,179 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glazebrooke Coffee Estate</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/vendor/bootstrap/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container navbar">
+        <div class="logo">
+          <img src="./assets/img/logo.png" alt="Glazebrooke Coffee Logo" />
+        </div>
+        <button
+          class="navbar-toggle"
+          id="navbarToggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggle-icon"></span>
+        </button>
+        <nav id="mainNav">
+          <ul>
+            <li><a href="#">Home Page</a></li>
+            <li><a href="#">Regional Lots</a></li>
+            <li><a href="#">Our Crafts</a></li>
+            <li><a href="#">Our People</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Enquiries</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="hero">
+      <img
+        src="./assets/img/mountview.png"
+        alt="Coffee Estate Landscape"
+        class="hero-img"
+      />
+      <div class="hero-content">
+        <h1>Where bisons roam and birds soar, our coffee finds its soul.</h1>
+        <div class="hero-links">
+          <a href="#"><span>Discover Our Coffee</span></a>
+          <a href="#"><span>Partner With Us</span></a>
+        </div>
+      </div>
+    </section>
+    <section class="smoke-section">
+      <div class="smoke-container">
+        <img
+          class="smoke-img"
+          src="./assets/img/smoke.png"
+          alt="Smoke Effect"
+        />
+        <button class="smoke-btn" id="discoverBtn">
+          <span>Discover Our Coffee</span>
+          <svg
+            width="38"
+            height="22"
+            viewBox="0 0 38 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2 2L36 16L2 30"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </section>
+    <section class="welcome-section" id="welcome">
+      <div class="welcome-img">
+        <img
+          src="./assets/img/roadbend.png"
+          alt="Winding Road in Coffee Estate"
+          class="welcome-main-img"
+        />
+      </div>
+      <div class="welcome-content">
+        <h2>Welcome to Glazebrooke Coffee Estate</h2>
+        <div class="welcome-subtitle">
+          Brewed by Nature, Perfected by Legacy
+        </div>
+        <p>
+          Nested in the serene hills of Yercaud, Glaze Brooke Coffee Estate is a
+          70-year-old legacy of harmony with nature, heritage, and
+          craftsmanship. Situated at altitudes of 3,400 to 4,000 feet, our
+          coffee thrives in a unique microclimate of misty mornings and sunlit
+          afternoons, growing freely in open fields alongside a vibrant
+          ecosystem.
+        </p>
+        <p>
+          Here, nature is our partner, where bison roam, birds soar, and life
+          flourishes. Every bean reflects this purity, celebrating resilience,
+          biodiversity, and interconnectedness. Now, we invite you to savor the
+          rich, full-bodied flavors of our handcrafted coffee, directly sourced
+          from our estate to your café.
+        </p>
+        <div class="welcome-actions">
+          <a href="#" class="welcome-btn"><span>Discover Our Coffee</span></a>
+          <a href="#" class="welcome-btn"><span>Partner With Us</span></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-row">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="./assets/img/logo.png" alt="Glazebrooke Coffee Logo" />
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-contact">
+            <div>Contact Us</div>
+            <div>+91 1233456789</div>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-address">
+            Address<br />
+            xyz Street<br />
+            chennai 600017
+          </div>
+          <div class="footer-links">
+            <a href="#" class="footer-link-main">Partner with Us</a>
+            <a href="#" class="footer-link-secondary">Give us your Feedback</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Glazebrooke Coffee Estate. All rights reserved.
+      </div>
+    </footer>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+      document.getElementById("discoverBtn").onclick = function () {
+        document
+          .getElementById("welcome")
+          .scrollIntoView({ behavior: "smooth" });
+      };
+      const navbarToggle = document.getElementById("navbarToggle");
+      const mainNav = document.getElementById("mainNav");
+      navbarToggle.addEventListener("click", function () {
+        mainNav.classList.toggle("nav-open");
+        navbarToggle.classList.toggle("open");
+      });
+      // Sticky header on scroll
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        if (window.scrollY > 10) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      });
+    </script>
+  </body>
+</html>
