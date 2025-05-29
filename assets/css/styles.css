@@ -27,6 +27,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "Gotham Normal";
+  src: url("../fonts/gotham/GOTHAM-MEDIUM.TTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   font-family: "Nuosusil Regular", serif;
@@ -219,7 +225,7 @@ img,
 /* Header */
 header {
   border-bottom: 2px solid #444;
-  background: rgba(0, 0, 0, 0.60);
+  background: rgb(0 0 0 / 91%);
   padding: 0.8rem 0;
   position: fixed;
   top: 0;
@@ -392,7 +398,8 @@ header.sticky {
   width: 15px;
   height: 19px;
   margin-left: 0.3em;
-  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>") no-repeat center center;
+  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>")
+    no-repeat center center;
   background-size: contain;
   vertical-align: middle;
   transition: margin-left 0.2s;
@@ -583,7 +590,8 @@ header.sticky {
   width: 15px;
   height: 19px;
   margin-left: 0.3em;
-  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>") no-repeat center center;
+  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>")
+    no-repeat center center;
   background-size: contain;
   vertical-align: middle;
   transition: margin-left 0.2s;
@@ -931,7 +939,7 @@ footer {
 
 .coffee-hero-content h1 {
   font-family: "Nuosusil Regular", serif;
-  font-size: clamp(2.5rem, 5vw, 3.2rem);
+  font-size: clamp(3.5rem, 5vw, 4.2rem);
   margin: 0 0 0.5rem;
   line-height: 1.2;
   font-weight: 400;
@@ -954,11 +962,178 @@ footer {
   font-weight: 300;
 }
 
+.sustainability-hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  background: #000;
+}
+
+.sustainability-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.9);
+}
+
+.sustainability-hero-content {
+  position: absolute;
+  bottom: -340px;
+  z-index: 3;
+  color: #fff;
+  margin: 0% 4% 0% 0%;
+  max-width: 600px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.sustainability-hero-content h1 {
+  font-family: "Nuosusil Regular", serif;
+  font-size: clamp(3.5rem, 5vw, 4.2rem);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.sustainability-hero-subtitle {
+  font-family: "Gotham Thin", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.spacing-section {
+  height: 35vh;
+  background: #000;
+}
+.sustainability-hero-desc {
+  font-family: "Gotham Thin", sans-serif;
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-weight: 300;
+}
+
+.our-people-hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: #000;
+}
+
+.our-people-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.9);
+}
+
+.our-people-hero-content {
+  position: absolute;
+  bottom: -20px;
+  z-index: 3;
+  color: #fff;
+  margin: 0% 4% 0% 0%;
+  max-width: 600px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.our-people-hero-content h1 {
+  font-family: "Nuosusil Regular", serif;
+  font-size: clamp(3.5rem, 5vw, 4.2rem);
+  margin: 0 0 0.2rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+}
+
+.our-people-hero-subtitle {
+  font-family: "Gotham Thin", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+.spacing-section {
+  height: 50vh;
+    background: #000;
+}
+
+.contactus-hero-section {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  background: #000;
+}
+
+.contactus-hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(0.9);
+}
+
+.contactus-hero-content {
+  position: absolute;
+  bottom: -30px;
+  z-index: 3;
+  color: #fff;
+  margin: 0% 4% 0% 0%;
+  max-width: 600px;
+  padding: 2rem 3rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+.contactus-hero-content h1 {
+  font-family: "Nuosusil Regular", serif;
+  font-size: clamp(3.5rem, 5vw, 4.2rem);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.contactus-hero-subtitle {
+  font-family: "Gotham Thin", sans-serif;
+  font-size: 1.35rem;
+  letter-spacing: 0.6px;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.contactus-hero-desc {
+  font-family: "Gotham Thin", sans-serif;
+  font-size: 0.9rem;
+  color: #f0f0f0;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-weight: 300;
+}
+
 /* === Washed Process Section === */
 .washed-process-section {
   background: #000;
   width: 100vw;
-  padding: 0;
+  padding: 0 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -969,19 +1144,20 @@ footer {
 
 .washed-process-content {
   width: 100%;
-  max-width: 1100px;
-  margin-top: 200px !important;
-  padding: 2.5rem 0 0 0;
+  max-width: 1400px;
+  margin-top: 250px !important;
+  padding: 2.5rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  letter-spacing: 1px;
 }
 
 .washed-process-content h2 {
   font-family: "Nuosusil Regular", serif;
-  font-size: 2.2rem;
-  color: #fff;
+  font-size: 2.5rem;
+  color: #ffffff;
   margin-bottom: 0.7rem;
   text-align: center;
   font-weight: normal;
@@ -989,801 +1165,93 @@ footer {
 
 .washed-process-subtitle {
   font-family: "Gotham Thin", Arial, sans-serif;
-  font-size: 1.13rem;
-  color: #ccc;
+  font-size: 1.3rem;
+  color: #ffffff;
   text-align: center;
-  max-width: 600px;
+  max-width: 800px;
   font-weight: 400;
   letter-spacing: 0.2px;
 }
 
-.washed-process-cards {
+.washed-process-steps {
   position: relative;
-  width: 90vw;
-  max-width: 800px;
-  min-height: 300px;
-  margin: 0 auto 0 auto;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 0.7rem;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-evenly;
-  z-index: 1;
-  overflow: hidden;
+  width: 100%;
+  margin: 3vw auto 0 auto;
+  max-width: 1100px;
 }
 
-.washed-process-cards::before {
-  content: "";
+.types-coffee-card {
+  display: flex;
+  flex-direction: row;
+}
+.washed-process-line {
   position: absolute;
-  inset: 0;
-  background: url("../img/smoke.png") center center/cover no-repeat;
-  opacity: 0.55;
-  z-index: 0;
-  pointer-events: none;
+  top: 105px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.13);
+  border-radius: 2px;
+  z-index: 1;
+  width: calc(100% - 270px);
+  left: 60px;
+  right: 60px;
+  margin: 0 auto;
+}
+
+.washed-process-line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+  width: 0;
+  transition: width 1.7s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+
+.washed-process-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  z-index: 3;
+  padding: 10px;
+  width: 100%;
+  gap: 0;
 }
 
 .washed-process-card {
-  position: relative;
-  font-family: "Nuosusil Regular", serif;
-  font-size: 2.6rem;
-  color: #fff;
-  width: 90px;
-  height: 90px;
+  flex: 1 1 0;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  font-weight: 400;
-  letter-spacing: 1.2px;
-  margin: 2.5rem 1.5rem 2.5rem 1.5rem;
-  background: none;
-  z-index: 1;
-}
-
-.washed-process-card::after {
-  content: "";
-  display: block;
-  width: 7px;
-  height: 7px;
-  background: #fff;
-  border-radius: 50%;
-  margin: 0.5rem auto 0 auto;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -18px;
-  opacity: 0.9;
-}
-
-.washed-process-card:last-child::after {
-  display: block;
-}
-
-.washed-process-arrow {
-  position: absolute;
-  right: 2vw;
-  bottom: 0;
-  transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1.5px solid #fff;
-  color: #fff;
-  font-size: 1.7rem;
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  min-width: 120px;
+  max-width: 260px;
+  position: relative;
+  padding-top: 0;
+  transition: color 0.3s;
+  text-align: center;
+}
+
+.washed-process-num {
+  font-family: "Gotham Normal", serif;
+  font-size: 2.8rem;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 0.2em;
   z-index: 2;
-  transition: background 0.2s, color 0.2s;
+  letter-spacing: 1px;
 }
 
-.washed-process-arrow:hover {
+.washed-process-dot {
+  width: 12px;
+  height: 12px;
   background: #fff;
-  color: #000;
-}
-
-@media (max-width: 560px) {
-  .info-cards-wrapper {
-    grid-template-columns: 1fr;
-    justify-content: center;
-    justify-items: center;
-    gap: 2rem;
-    row-gap: 4rem;
-    padding: 20px 20px 40px 20px;
-  }
-
-  .info-card {
-    max-width: 350px;
-    min-width: 100px;
-    margin: 0 auto;
-    padding: 1.5rem;
-    border-radius: 30px;
-  }
-
-  .info-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  .info-card p {
-    font-size: 0.95rem;
-    margin-bottom: 2rem;
-  }
-
-  .info-card img {
-    height: 70px;
-    bottom: -30px;
-  }
-
-  .washed-process-arrow {
-    width: 36px;
-    height: 36px;
-    font-size: 1.1rem;
-    right: 1vw;
-  }
-
-  .footer-logo img {
-    max-width: 250px !important;
-    height: auto;
-  }
-
-  .smoke-btn span {
-    font-size: 1.2rem;
-  }
-
-  .smoke-btn svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .coffee-hero-section {
-    min-height: 260px;
-    height: 60vw;
-    max-height: 340px;
-  }
-
-  .coffee-hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .washed-process-content h2 {
-    font-size: 1.1rem;
-  }
-
-  .washed-process-cards {
-    flex-direction: row;
-    gap: 0.2rem;
-    min-height: 70px;
-    padding: 0.5rem 0;
-  }
-
-  .washed-process-card {
-    font-size: 1rem;
-  }
-
-  .washed-process-arrow {
-    width: 32px;
-    height: 32px;
-    font-size: 1rem;
-    right: 0.5rem;
-    bottom: 0.5rem;
-  }
-
-  .washed-process-arrow {
-    width: 28px;
-    height: 28px;
-    font-size: 0.9rem;
-    right: 0.5vw;
-  }
-}
-
-/* --- End Washed Process Section: SMOKE BG & Layout --- */
-@media (min-width: 560px) and (max-width: 768px) {
-  .navbar {
-    flex-direction: row;
-    gap: 0.5rem;
-  }
-
-  .smoke-img {
-    height: 100%;
-    max-width: 600px;
-  }
-
-  .hero-links {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .hero-links span {
-    font-size: clamp(1.2rem, 3vw, 1.2rem);
-  }
-
-  #mainNav {
-    max-width: 100vw;
-    padding: 1.2rem 1rem;
-  }
-
-  html {
-    font-size: 15px;
-  }
-
-  .container {
-    width: 99%;
-    max-width: 100vw;
-    padding: 0 0.5rem;
-  }
-
-  .hero {
-    height: 90vh;
-    min-height: 120px;
-  }
-
-  .beyond-content {
-    max-width: 98vw;
-    padding: 0 0.5rem;
-  }
-
-  .hero-content {
-    max-width: 98vw;
-    padding: 0 0.5rem;
-  }
-
-  .beyond-content h1 {
-    font-size: clamp(2.5rem, 5vw, 2rem) !important;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(2.5rem, 5vw, 2rem) !important;
-  }
-
-  .welcome-section {
-    padding: 1rem 0;
-  }
-
-  .welcome-img {
-    min-width: unset;
-  }
-
-  .welcome-content h2 {
-    font-size: clamp(2.2rem, 4vw, 2.3rem);
-  }
-
-  .welcome-content .welcome-subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-  }
-
-  .footer-row {
-    padding: 1.2rem 0 0.7rem 0;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .logo img {
-    height: 40px;
-  }
-
-  .card-section {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .card {
-    padding: 0.8rem;
-    min-width: 120px;
-    max-width: 98vw;
-  }
-
-  .footer-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 1.2rem;
-    padding: 1.2rem 0 0.7rem 0;
-    width: 99%;
-  }
-
-  .footer-logo img {
-    max-width: 300px;
-    height: auto;
-  }
-
-  .footer-logo {
-    min-width: unset;
-    max-width: 90vw;
-    font-size: 1.5rem;
-    align-items: center;
-    text-align: center;
-  }
-
-  .footer-contact,
-  .footer-address,
-  .footer-links {
-    min-width: unset;
-    max-width: 90vw;
-    align-items: center !important;
-    text-align: center !important;
-    font-size: 1rem;
-  }
-
-  .footer-links {
-    margin-top: 0.5rem;
-    gap: 0.5rem;
-  }
-
-  .footer-address {
-    margin-top: 0.5rem;
-  }
-
-  .info-cards-wrapper {
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-    justify-content: center;
-    justify-items: center;
-    gap: 2.5rem;
-    row-gap: 5rem;
-    padding: 50px 20px;
-    min-height: unset;
-  }
-
-  .info-card {
-    max-width: 350px;
-    min-width: 100px;
-    margin: 0 auto;
-    padding: 1rem 0.3rem 1.5rem 0.3rem;
-    border-radius: 30px;
-  }
-
-  .info-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.7rem;
-  }
-
-  .info-card img {
-    height: 80px;
-    bottom: -40px;
-  }
-
-  .info-cards-section {
-    padding: 0 !important;
-  }
-
-  .info-cards-container {
-    padding-bottom: 40px !important;
-  }
-
-  .info-card {
-    max-width: 98vw;
-  }
-
-  .info-card:nth-child(3) {
-    grid-column: 1 / -1;
-    justify-self: center;
-    max-width: 400px;
-  }
-
-  #mainNav {
-    width: 100%;
-    max-width: 350px;
-  }
-
-  .info-card {
-    max-width: 98vw;
-    min-width: 140px;
-    margin: 0 auto;
-    padding: 1.2rem 0.7rem 2rem 0.7rem;
-    border-radius: 40px;
-  }
-
-  .info-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.7rem;
-  }
-
-  .info-card p {
-    font-size: 1rem;
-    margin-bottom: 2.5rem;
-  }
-
-  .info-card img {
-    height: 100px;
-    bottom: -40px;
-  }
-
-  .beyond-content h1 {
-    font-size: clamp(2rem, 5vw, 2.5rem);
-  }
-
-  .beyond-link {
-    font-size: 1.5rem !important;
-  }
-
-  .smoke-btn span {
-    font-size: 1.5rem;
-  }
-
-  .smoke-btn svg {
-    width: 25px;
-    height: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    position: relative;
-    justify-content: space-between;
-  }
-
-  .story-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 20px 0px 20px;
-  }
-
-  .story-content {
-    flex: 1 1 50%;
-    max-width: 100%;
-    padding: 2rem 0;
-  }
-
-  .logo {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0.5rem;
-  }
-
-  .logo img {
-    height: 36px;
-    width: auto;
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
-  }
-
-  .navbar-toggle {
-    display: block;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-    margin-left: 0;
-  }
-
-  #mainNav {
-    display: none;
-    position: absolute;
-    top: calc(100% + 10px);
-    right: 0;
-    background: #222;
-    width: 100%;
-    box-shadow: 0 8px 32px #000a;
-    padding: 1.5rem 1.5rem 1.5rem 2rem;
-    flex-direction: column;
-    align-items: flex-start;
-    z-index: 1001;
-    border-radius: 0 0 10px 10px;
-  }
-
-  #mainNav.nav-open {
-    display: flex !important;
-  }
-
-  #mainNav ul {
-    flex-direction: column;
-    gap: 1.2rem;
-    width: 100%;
-  }
-
-  nav ul {
-    gap: 1.2rem;
-  }
-
-  .footer-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-    padding: 2rem 0 1rem 0;
-    width: 98%;
-  }
-
-  .footer-left,
-  .footer-right {
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer-right {
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-top: 1rem;
-  }
-
-  .footer-logo,
-  .footer-contact,
-  .footer-address,
-  .footer-links {
-    align-items: center !important;
-    text-align: center !important;
-    min-width: unset;
-    margin: 0 auto;
-  }
-
-  .footer-address {
-    text-align: center !important;
-    margin-top: 0.5rem;
-  }
-
-  .footer-links {
-    align-items: center !important;
-    margin-top: 0.5rem;
-  }
-
-  .story-content p {
-    font-size: 1rem;
-  }
-
-  .coffee-hero-content {
-    margin-left: 3%;
-    max-width: 95vw;
-    padding: 1.5rem 0.7rem 1.5rem 0.7rem;
-  }
-
-  .washed-process-content {
-    padding: 2rem 0.5rem 2rem 0.5rem;
-  }
-
-  .washed-process-cards {
-    gap: 1.5rem;
-    max-width: 98vw;
-  }
-
-  .washed-process-card {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-
-  .washed-process-arrow {
-    width: 40px;
-    height: 40px;
-    font-size: 1.3rem;
-    right: 1rem;
-    bottom: 1rem;
-  }
-
-  .welcome-section {
-    flex-direction: column;
-    padding: 2.5rem 0;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(2rem, 5vw, 2.5rem);
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  img,
-  .hero-img,
-  .welcome-main-img,
-  .footer-logo img {
-    width: 100%;
-    height: 100%;
-  }
-
-  .smoke-img {
-    height: 100%;
-    width: 100%;
-    max-width: 900px;
-  }
-
-  .hero {
-    height: 90vh;
-    min-height: 180px;
-  }
-
-  .hero-content h1 {
-    font-size: clamp(3.5rem, 4vw, 2.5rem) !important;
-  }
-
-  .beyond-content h1 {
-    font-size: clamp(3.5rem, 4vw, 2.5rem) !important;
-  }
-
-  .welcome-section {
-    flex-direction: column;
-    padding: 2.5rem 0;
-  }
-
-  .welcome-img {
-    min-width: unset;
-  }
-
-  .welcome-content {
-    padding: 1.5rem 1rem;
-  }
-
-  .card-section {
-    gap: 1.2rem;
-  }
-
-  .logo img {
-    height: 40px;
-  }
-
-  header {
-    padding: 0.8rem 10px;
-  }
-
-  .card {
-    padding: 1.2rem;
-    min-width: 180px;
-    max-width: 98vw;
-  }
-
-  .info-cards-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 2.5rem;
-    row-gap: 5rem;
-    min-height: 80vh;
-    padding: 50px 20px;
-  }
-
-  .info-card {
-    max-width: 98vw;
-    min-width: 140px;
-    max-height: 340px;
-    margin: 0 auto;
-    padding: 1.2rem 0.7rem 2rem 0.7rem;
-  }
-
-  .info-card img {
-    height: 100px;
-    bottom: -60px;
-  }
-}
-
-@media (min-width: 1024px) and (max-width: 1440px) {
-  .container {
-    width: 96%;
-    max-width: 1000px;
-  }
-
-  .beyond-content,
-  .hero-content {
-    max-width: 620px;
-  }
-
-  .welcome-content {
-    padding: 2rem 1.2rem;
-  }
-
-  .smoke-img {
-    max-width: 1200px;
-  }
-
-  .story-section {
-    flex-direction: column;
-    padding-bottom: 30px;
-  }
-
-  .story-img,
-  .story-content {
-    min-width: unset;
-    max-width: 100vw;
-    padding: 0;
-  }
-
-  .story-content {
-    padding: 2rem 1.2rem;
-  }
-
-  .info-cards-section {
-    flex-direction: column;
-    padding: 40px 0 20px 0;
-  }
-
-  .info-card {
-    max-width: 98vw;
-    min-width: 180px;
-    padding: 1.5rem 1rem 1.5rem 1rem;
-  }
-
-  .coffee-hand-section img {
-    max-height: 700px;
-    min-height: 250px;
-  }
-
-  .info-cards-wrapper {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 3rem;
-    padding: 50px 0;
-    min-height: unset;
-  }
-
-  .info-card {
-    max-width: 98vw;
-    min-width: 180px;
-    margin: 0 auto;
-    padding: 1.5rem 1rem 2.5rem 1rem;
-  }
-
-  .info-card img {
-    height: 150px;
-    bottom: -90px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .info-cards-wrapper {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
-    padding: 90px 0;
-    min-height: 80vh;
-  }
-
-  .info-card {
-    max-width: 450px;
-    min-width: 220px;
-    border-radius: 55px;
-    padding: 1.2rem 1.2rem 3rem 1.2rem;
-  }
-
-  .info-card h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-
-  .info-card p {
-    font-size: 1.05rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .info-card img {
-    height: 200px;
-    bottom: -130px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .smoke-img {
-    margin-top: 60px;
-    max-width: 1400px;
-  }
-
-  .smoke-section {
-    height: 100vh;
-  }
-
-  .smoke-container {
-    padding: 0;
-  }
-
-  .welcome-section {
-    padding: 40px 0px 100px 0px;
-  }
-
-  .info-cards-wrapper {
-    max-width: 80vw !important;
-  }
-
-  .story-content p {
-    font-size: 1.2rem !important;
-  }
-
-  .story-img {
-    max-width: 1020px !important;
-  }
-
-  .coffee-hand-section img {
-    max-height: 800px;
-  }
+  border-radius: 50%;
+  margin: 0.2em 0 1em 0;
+  z-index: 2;
 }
 
 /* Coffee Jars Animation Section */
@@ -1917,283 +1385,152 @@ footer {
   }
 }
 
-/* Swiper and slider custom styles */
-.coffee-hand-section {
-  width: 100vw;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 60px 0 40px 0;
-  position: relative;
-  min-height: 340px;
-  overflow: hidden;
+.coffee-jar {
+  opacity: 0;
+  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
 
-.coffeehand-swiper {
-  max-width: 100%;
-  position: relative;
+.coffee-jar:hover {
+  transform: scale(1.05) translateY(-10px) !important;
 }
-
-.coffeehand-swiper .swiper-wrapper {
-  align-items: center;
-}
-
-.coffeehand-swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.coffeehand-swiper .swiper-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 1.2em;
-  box-shadow: 0 8px 32px #000a;
-  background: #111;
-}
-
-.coffeehand-next {
-  position: absolute;
-  right: -40px;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  background: none;
-  border: none;
-  cursor: pointer;
-  width: 81px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coffeehand-next svg {
-  width: 81px;
-  height: 80px;
-  display: block;
-}
-
-.coffeehand-swiper .swiper-button-prev,
-.coffeehand-swiper .swiper-pagination {
-  display: none !important;
-}
-
-.swiper-slide {
-  width: 100%;
-}
-
-@media (max-width: 600px) {
-  .coffeehand-swiper {
-    width: 98vw;
-    min-width: 0;
-  }
-
-  .coffeehand-swiper .swiper-slide img {
-    max-width: 98vw;
-    border-radius: 0.7em;
-  }
-
-  .coffeehand-next {
-    right: 0;
-    width: 54px;
-    height: 54px;
-  }
-
-  .coffeehand-next svg {
-    width: 54px;
-    height: 54px;
-  }
-}
-
-/* Types of Coffee Section */
-.types-coffee-section {
-  width: 100vw;
-  background: #000;
-  padding: 0 0 56px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.types-coffee-title {
-  font-family: "Nuosusil Regular", serif;
-  font-size: 2.2rem;
-  color: #fff;
-  margin: 2.5rem 0 1.5rem 0;
-  text-align: center;
-  letter-spacing: 0.5px;
-  font-weight: normal;
-}
-
-.types-coffee-swiper {
-  width: 100vw;
-  max-width: 1100px;
-  padding: 0 0 0 0;
-  position: relative;
-  overflow: visible;
-}
-
-.types-coffee-swiper .swiper-wrapper {
-  align-items: stretch;
-}
-
-.types-coffee-card {
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 1.2em;
-  box-shadow: 0 6px 32px #000a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2.2rem 1.2rem 1.7rem 1.2rem;
-  min-width: 320px;
-  max-width: 340px;
-  margin: 0 auto;
-  height: 370px;
-  justify-content: flex-start;
-  position: relative;
-  transition: box-shadow 0.2s;
-}
-
-.types-coffee-bottle {
-  display: block;
-  width: 90px;
-  height: 180px;
-  margin-bottom: 1.2rem;
-  margin-top: 0;
-  text-align: center;
-  /* Hide by default, show only when .show-bottle is present */
-}
-
-.types-coffee-bottle img {
-  width: 90px;
-  height: 180px;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 16px #0008);
-  display: block;
-  margin: 0 auto;
-}
-
-.types-coffee-bottle:not(.show-bottle) {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #fff;
-  opacity: 0.18;
-  margin-bottom: 1.2rem;
-  margin-top: 0.2rem;
-  margin-left: auto;
-  margin-right: auto;
-  content: "";
-}
-
-.types-coffee-bottle:not(.show-bottle) img {
-  display: none;
-}
-
-.types-coffee-info {
-  text-align: left;
-  width: 100%;
-}
-
-.types-coffee-info h3 {
-  font-family: "Nuosusil Regular", serif;
-  font-size: 1.25rem;
-  color: #fff;
-  margin-bottom: 0.6rem;
-  font-weight: 400;
-}
-
-.types-coffee-info p {
+.washed-process-title {
   font-family: "Gotham Thin", Arial, sans-serif;
-  font-size: 1.01rem;
-  color: #ccc;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.types-coffee-btn {
-  display: block;
-  margin: 2.2rem auto 0 auto;
-  background: #222;
+  font-size: 1.12rem;
   color: #fff;
-  font-family: "Nuosusil Regular", serif;
-  font-size: 1.1rem;
-  border: none;
-  border-radius: 2em;
-  padding: 0.9em 2.2em;
-  cursor: pointer;
-  box-shadow: 0 2px 12px #0007;
-  transition: background 0.2s, color 0.2s;
-  letter-spacing: 0.5px;
+  margin-bottom: 0.9em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  text-align: center;
+  min-height: 1.5em;
+  opacity: 0;
+  transition: opacity 0.7s;
 }
 
-.types-coffee-btn:hover {
+.washed-process-desc {
+  font-family: "Gotham Thin", Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #ccc;
+  text-align: center;
+  min-height: 3.5em;
+  opacity: 0;
+  transition: opacity 0.7s;
+  margin-bottom: 0.5em;
+}
+
+.washed-process-card.active .washed-process-title,
+.washed-process-card.active .washed-process-desc {
+  opacity: 1;
+}
+
+.washed-process-card:not(.active) .washed-process-title,
+.washed-process-card:not(.active) .washed-process-desc {
+  opacity: 0;
+}
+
+.washed-process-card .washed-process-dot {
   background: #fff;
-  color: #000;
+  opacity: 0.7;
 }
 
-.types-coffee-swiper .swiper-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 420px;
-  background: none;
+.washed-process-card.active .washed-process-dot {
+  background: #fff;
+  opacity: 1;
+  box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.13);
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+  .washed-process-cards {
+    gap: 0.5rem;
+  }
+  .washed-process-card {
+    max-width: 200px;
+    min-width: 80px;
+  }
 }
 
 @media (max-width: 900px) {
-  .types-coffee-section {
-    padding-bottom: 30px;
+  .washed-process-cards {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2.5rem;
   }
-
-  .types-coffee-card {
-    min-width: 240px;
-    max-width: 260px;
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
-    height: 320px;
+  .washed-process-line,
+  .washed-process-line-progress {
+    display: none;
   }
-
-  .types-coffee-bottle {
-    width: 60px;
-    height: 110px;
-    margin-bottom: 0.7rem;
+  .washed-process-card {
+    max-width: 100vw;
+    min-width: 0;
+    margin-bottom: 1.5rem;
+    align-items: center;
   }
-
-  .types-coffee-swiper .swiper-slide {
-    height: 320px;
+  .washed-process-num {
+    font-size: 2rem;
+  }
+  .washed-process-title {
+    font-size: 1rem;
+  }
+  .washed-process-desc {
+    font-size: 0.97rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1100px) {
+  .types-coffee-card {
+    min-width: 180px;
+    max-width: 260px;
+    height: 260px;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .types-coffee-bottle {
+    width: 60px;
+    min-width: 60px;
+    height: 120px;
+    margin-right: 0.7rem;
+  }
+  .types-coffee-bottle img {
+    width: 60px;
+    height: 120px;
+  }
+  .types-coffee-swiper .swiper-slide {
+    height: 260px;
+  }
+}
+
+@media (max-width: 700px) {
   .types-coffee-section {
     padding-bottom: 18px;
   }
-
   .types-coffee-title {
     font-size: 1.2rem;
     margin: 1.2rem 0 0.7rem 0;
   }
-
   .types-coffee-card {
     min-width: 90vw;
     max-width: 98vw;
+    height: 180px;
     padding: 0.7rem 0.2rem 0.7rem 0.2rem;
-    height: 220px;
   }
-
   .types-coffee-bottle {
     width: 38px;
+    min-width: 38px;
     height: 60px;
-    margin-bottom: 0.3rem;
+    margin-right: 0.3rem;
   }
-
+  .types-coffee-bottle img {
+    width: 38px;
+    height: 60px;
+  }
   .types-coffee-swiper .swiper-slide {
-    height: 220px;
+    height: 180px;
   }
-
+  .types-coffee-info h3 {
+    font-size: 1rem;
+  }
+  .types-coffee-info p {
+    font-size: 0.93rem;
+  }
   .types-coffee-btn {
     font-size: 0.9rem;
     padding: 0.5em 1.2em;
@@ -2201,14 +1538,460 @@ footer {
   }
 }
 
-
-.coffee-jar {
-  opacity: 0;
-  transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1) !important;
+/* --- Types of Coffee Section: Only first (active) card shows bottle image, clean left-aligned UI --- */
+.types-coffee-section {
+  background: #000;
+  color: #fff;
+  padding: 3rem 0 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.coffee-jar:hover{
-  transform: scale(1.05)  translateY(-10px)
+.types-coffee-title {
+  color: #fff;
+  font-family: "Nuosusil Regular", serif;
+  font-size: 2.7rem;
+  font-weight: 400;
+  margin: 0 0 2.5rem 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.types-coffee-swiper {
+  background: transparent;
+  padding: 0;
+  margin-left: 100px !important;
+  max-width: 100vw;
+  overflow: visible;
+  width: 100%;
+}
+
+.types-coffee-swiper .swiper-wrapper {
+  align-items: flex-start;
+}
+
+.types-coffee-card {
+  background: transparent !important;
+  border: 1px solid white;
+  box-shadow: none !important;
+  border-radius: 40px !important;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  min-width: 320px;
+  max-width: 420px;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  transition: none;
+  position: relative;
+  z-index: 1;
+}
+
+.types-coffee-bottle {
+  display: none;
+  width: 200px;
+  min-width: 90px;
+  height: 300px;
+  margin-right: 1.5rem;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.active-coffee-card .types-coffee-bottle {
+  display: block;
+  margin-right: 2.2rem;
+  margin-left: 0;
+  margin-top: 0.2rem;
+  position: absolute;
+  left: -30px;
+  margin-bottom: 0.2rem;
+  width: 250px;
+  min-width: 140px;
+  height: 400px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.active-coffee-card .types-coffee-bottle {
+  display: block;
+  margin-right: 2.2rem;
+  margin-left: 0;
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+  width: 140px;
+  min-width: 140px;
+  height: 260px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.types-coffee-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: left;
+  align-items: flex-start;
+}
+
+.types-coffee-info h3 {
+  font-family: "Nuosusil Regular", serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.7rem;
+  font-weight: 400;
+  text-align: left;
+  letter-spacing: 0.04em;
+}
+
+.types-coffee-info p {
+  font-family: "Gotham Thin", Arial, sans-serif;
+  font-size: 1.18rem;
+  color: #ccc;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+  font-weight: 400;
+}
+
+.types-coffee-btn {
+  display: block;
+  margin: 2.2rem auto 0 auto;
+  background: #232323;
+  color: #fff;
+  font-family: "Nuosusil Regular", serif;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 2em;
+  padding: 0.9em 2.2em;
+  cursor: pointer;
+  box-shadow: 0 2px 12px #0002;
+  transition: background 0.2s, color 0.2s;
+  letter-spacing: 0.5px;
+}
+
+.types-coffee-btn:hover {
+  background: #fff;
+  color: #232323;
+  border: 1px solid #232323;
+}
+
+@media (max-width: 1100px) {
+  .types-coffee-card {
+    min-width: 220px;
+    max-width: 340px;
+    padding: 0 1vw;
+  }
+  .types-coffee-bottle,
+  .types-coffee-swiper .swiper-slide.swiper-slide-active .types-coffee-bottle {
+    width: 60px;
+    min-width: 60px;
+    height: 120px;
+  }
+  .types-coffee-bottle img {
+    width: 60px;
+    height: 120px;
+  }
+  .types-coffee-info h3 {
+    font-size: 1.3rem;
+  }
+  .types-coffee-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .types-coffee-section {
+    padding-bottom: 18px;
+  }
+  .types-coffee-title {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.7rem 0;
+  }
+  .types-coffee-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 0 0.5vw;
+  }
+  .types-coffee-bottle,
+  .types-coffee-swiper .swiper-slide.swiper-slide-active .types-coffee-bottle {
+    width: 38px;
+    min-width: 38px;
+    height: 60px;
+  }
+  .types-coffee-bottle img {
+    width: 38px;
+    height: 60px;
+  }
+  .types-coffee-info h3 {
+    font-size: 1rem;
+  }
+  .types-coffee-info p {
+    font-size: 0.93rem;
+  }
+  .types-coffee-btn {
+    font-size: 0.9rem;
+    padding: 0.5em 1.2em;
+    margin-top: 1.2rem;
+  }
+}
+
+.active-coffee-card .types-coffee-card {
+  /* If .types-coffee-card is NOT inside .swiper-slide, use .active-coffee-card directly */
+  border: 2.5px solid #fff !important;
+  background: rgba(30, 30, 30, 0.97) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35), 0 0 0 2px #fff3;
+  border-radius: 32px !important;
+  padding: 32px 28px 32px 28px !important;
+  position: relative;
+  z-index: 2;
+  transition: box-shadow 0.2s, border 0.2s, background 0.2s;
+}
+
+.active-coffee-card .types-coffee-info h3 {
+  font-size: 2.1rem !important;
+  font-weight: 600 !important;
+  color: #fff !important;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+  font-family: "Nuosusil Regular", serif;
+}
+
+.active-coffee-card .types-coffee-info p {
+  font-size: 1.18rem !important;
+  color: #e0e0e0 !important;
+  font-family: "Gotham Thin", Arial, sans-serif;
+  line-height: 1.6;
+  margin-top: 0.2rem;
+}
+
+.active-coffee-card .types-coffee-bottle img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: none;
+  margin: 0;
+  display: block;
+}
+
+.active-coffee-card {
+  /* Optional: add a subtle glow to the active slide */
+  box-shadow: 0 0 0 4px #fff2, 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+  border-radius: 32px;
+}
+
+.our-people-story-smoke {
+  position: relative;
+  width: 100vw;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;
+  padding: 80px 0 60px 0;
+}
+
+.our-people-story-smoke-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../img/smoke.png") center center/cover no-repeat;
+  opacity: 0.45;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.our-people-story-smoke-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #e0e0e0;
+  text-align: center;
+  font-family: "Gotham Thin", Arial, sans-serif;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  padding: 0 2vw;
+}
+
+.our-people-story-smoke-content p {
+  margin-bottom: 1.2em;
+  color: #e0e0e0;
+}
+
+@media (max-width: 700px) {
+  .our-people-story-smoke-content {
+    font-size: 0.98rem;
+    padding: 0 4vw;
+  }
+  .our-people-story-smoke {
+    padding: 40px 0 30px 0;
+  }
+}
+
+/* Contact Section Styles */
+.partner-section {
+  width: 100vw;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 100px 0;
+}
+
+.partner-container {
   
-  !important;
+  display: flex
+;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1450px;
+  gap: 48px;}
+
+.partner-form {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-width: 320px;
+  max-width: 650px;
+}
+
+.partner-form-row {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+}
+
+.partner-form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.partner-form-group label {
+  font-family: "Gotham Thin", Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #bdbdbd;
+  margin-bottom: 2px;
+  margin-left: 2px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.partner-form-group input,
+.partner-form-group textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  color: #fff;
+  font-size: 1.08rem;
+  font-family: "Gotham Thin", Arial, sans-serif;
+  padding: 5px 2px 5px 0;
+  margin-bottom: 5px;
+  outline: none;
+  transition: border-color 0.2s;
+  resize: none;
+}
+
+.partner-form-group input:focus,
+.partner-form-group textarea:focus {
+  border-bottom: 1.5px solid #fff;
+}
+
+.partner-form-group textarea {
+  min-height: 48px;
+  max-height: 120px;
+}
+
+.partner-form button[type="submit"] {
+  margin-top: 18px;
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 2em;
+  padding: 0.6em 2.2em;
+  font-family: "Nuosusil Regular", serif;
+  font-size: 1.08rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  align-self: flex-start;
+}
+
+.partner-form button[type="submit"]:hover {
+  background: #fff;
+  color: #232323;
+}
+
+.partner-info {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-width: 260px;
+  max-width: 450px;
+  margin-left: 32px;
+  margin-top: 18px;
+}
+
+.partner-info h2 {
+  font-family: "Nuosusil Regular", serif;
+  font-size: 3.1rem;
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.01em;
+}
+
+.partner-info p {
+  font-family: "Gotham Thin", Arial, sans-serif;
+  font-size: 1.2rem;
+  color: #bdbdbd;
+  margin: 0;
+  line-height: 1.5;
+}
+
+@media (max-width: 900px) {
+  .partner-container {
+    flex-direction: column;
+    gap: 32px;
+    align-items: stretch;
+    max-width: 98vw;
+  }
+  .partner-info {
+    margin-left: 0;
+    margin-top: 12px;
+    align-items: flex-start;
+  }
+  .partner-form {
+    max-width: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .partner-section {
+    padding: 30px 0 40px 0;
+  }
+  .partner-info h2 {
+    font-size: 1.3rem;
+  }
+  .partner-info p {
+    font-size: 0.98rem;
+  }
+  .partner-form-group label {
+    font-size: 0.93rem;
+  }
+  .partner-form-group input,
+  .partner-form-group textarea {
+    font-size: 0.98rem;
+  }
 }
