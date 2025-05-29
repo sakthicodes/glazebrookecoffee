@@ -8,8 +8,8 @@
   <div class="hero-content">
     <h1>Where bisons roam and birds soar, our coffee finds its soul.</h1>
     <div class="hero-links">
-      <a href="#"><span>Discover Our Coffee</span></a>
-      <a href="#"><span>Partner With Us</span></a>
+      <a href="#" class="ff-gotham-thin"><span>Discover Our Coffee</span></a>
+      <a href="#" class="ff-gotham-thin"><span>Partner With Us</span></a>
     </div>
   </div>
 </section>
@@ -38,7 +38,7 @@
       src="./assets/img/smoke.png"
       alt="Smoke Effect" />
     <button class="smoke-btn" id="discoverBtn">
-      <span>Discover Our Coffee</span>
+      <span class="ff-gotham-thin fw-light">Discover Our Coffee</span>
       <svg
         width="38"
         height="22"
