@@ -225,44 +225,17 @@
             breakpoints: {
                 600: {
                     slidesPerView: 3,
-                    spaceBetween: 24
+                    spaceBetween: 20
                 },
                 900: {
                     slidesPerView: 4,
-                    spaceBetween: 32
+                    spaceBetween: 30
                 }
             },
-            on: {
-                slideChangeTransitionStart: updateBottleImages,
-                init: updateBottleImages
-            }
+             
         });
         swiper.autoplay.start(); // <-- Force autoplay to start
-
-        function updateBottleImages() {
-            // Remove bottle from all slides
-            var slides = document.querySelectorAll('.types-coffee-swiper .swiper-slide');
-            slides.forEach(function(slide) {
-                var bottleSpan = slide.querySelector('.types-coffee-bottle');
-                if (bottleSpan) {
-                    bottleSpan.innerHTML = '';
-                    bottleSpan.classList.remove('show-bottle');
-                }
-                slide.classList.remove('active-coffee-card');
-            });
-
-            var activeSlide = document.querySelector('.types-coffee-swiper .swiper-slide.swiper-slide-active');
-            if (activeSlide) {
-                var bottle = activeSlide.getAttribute('data-bottle');
-                var bottleSpan = activeSlide.querySelector('.types-coffee-bottle');
-                if (bottleSpan && bottle) {
-                    bottleSpan.innerHTML = '<img src="' + bottle + '" alt="" />';
-                    bottleSpan.classList.add('show-bottle');
-                }
-                activeSlide.classList.add('active-coffee-card');
-            }
-        }
-
+ 
         var steps = document.querySelectorAll('.washed-process-card');
         var line = document.querySelector('.washed-process-line-progress');
         var totalSteps = steps.length;

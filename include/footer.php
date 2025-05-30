@@ -35,27 +35,37 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script>
-    document.getElementById("discoverBtn").onclick = function() {
-        document
-            .getElementById("welcome")
-            .scrollIntoView({
-                behavior: "smooth"
-            });
-    };
-    const navbarToggle = document.getElementById("navbarToggle");
-    const mainNav = document.getElementById("mainNav");
-    navbarToggle.addEventListener("click", function() {
-        mainNav.classList.toggle("nav-open");
-        navbarToggle.classList.toggle("open");
-    });
-    // Sticky header on scroll
-    window.addEventListener("scroll", function() {
-        const header = document.querySelector("header");
-        if (window.scrollY > 10) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
+    document.addEventListener('DOMContentLoaded', function() {
+        var discoverBtn = document.getElementById("discoverBtn");
+        if (discoverBtn) {
+            discoverBtn.onclick = function() {
+                var welcome = document.getElementById("welcome");
+                if (welcome) {
+                    welcome.scrollIntoView({
+                        behavior: "smooth"
+                    });
+                }
+            };
         }
+        const navbarToggle = document.getElementById("navbarToggle");
+        const mainNav = document.getElementById("mainNav");
+        if (navbarToggle && mainNav) {
+            navbarToggle.addEventListener("click", function() {
+                mainNav.classList.toggle("nav-open");
+                navbarToggle.classList.toggle("open");
+            });
+        }
+        // Sticky header on scroll
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            if (header) {
+                if (window.scrollY > 10) {
+                    header.classList.add("sticky");
+                } else {
+                    header.classList.remove("sticky");
+                }
+            }
+        });
     });
 </script>
 

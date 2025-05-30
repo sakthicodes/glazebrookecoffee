@@ -14,7 +14,7 @@
   </div>
 </section>
 <section class="smoke-section">
-  <div class="smoke-container"> 
+  <div class="smoke-container">
     <div class="coffee-jars-row">
       <div class="coffee-jar" data-jar="1">
         <img src="assets/img/L2.png" alt="Selection 9" />
@@ -88,4 +88,8 @@
   </div>
 </section>
 <?php include './include/footer.php'; ?>
+<script>
+  
+</script>
+<!-- GSAP and ScrollTrigger CDN -->
 <script src="assets/js/jars-animate.js"></script>
