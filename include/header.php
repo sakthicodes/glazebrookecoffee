@@ -24,7 +24,7 @@
     <header>
         <div class="container navbar">
             <div class="logo">
-                <img src="./assets/img/logo.png" alt="Glazebrooke Coffee Logo" />
+                <a href="./"> <img src="./assets/img/logo.png" alt="Glazebrooke Coffee Logo" /></a>
             </div>
             <button
                 class="navbar-toggle"
