@@ -22,8 +22,8 @@
                 chennai 600017
             </div>
             <div class="footer-links">
-                <a href="#" class="footer-link-main">Partner with Us</a>
-                <a href="#" class="footer-link-secondary">Give us your Feedback</a>
+                <a href="./contact_us.php" class="footer-link-main">Partner with Us</a>
+                <a href="./contact_us.php" class="footer-link-secondary">Give us your Feedback</a>
             </div>
         </div>
     </div>
