@@ -7,7 +7,9 @@
         <h1>Our Coffee</h1>
         <div class="coffee-hero-subtitle">Altitude, Artistry, and Aroma</div>
         <p class="coffee-hero-desc">
-            At Glaze Brooke, coffee is more than a crop—it’s a craft. Every bean we produce carries the essence of the Servarayan Hills, nurtured by misty mornings, dappled sunlight, and rich, fertile soil. From harvest to drying, our meticulous processing methods ensure that every cup reflects the true character of our land. <br>
+            At Glaze Brooke, coffee is more than a crop—it's a craft. Every bean we produce carries the essence of the Servarayan Hills, nurtured by
+            misty mornings, dappled sunlight, and rich, fertile soil. From harvest to drying, our meticulous processing methods ensure that every cup
+            reflects the true character of our land. <br>
         </p>
         <p class="coffee-hero-desc">
             We employ three distinct coffee processing techniques, each shaping the flavor, aroma, and complexity of our beans in its own way.
@@ -39,7 +41,8 @@
                     <div class="washed-process-dot"></div>
                     <div class="washed-process-title">Depulping &amp; Fermentation</div>
                     <div class="washed-process-desc">
-                        The outer skin is removed, and the beans undergo controlled fermentation for up to 48 hours, allowing natural enzymes to break down residual fruit.
+                        The outer skin is removed, and the beans undergo controlled fermentation for up to 48 hours, allowing natural enzymes to break
+                        down residual fruit.
                     </div>
                 </div>
                 <div class="washed-process-card" data-step="3">
@@ -47,7 +50,8 @@
                     <div class="washed-process-dot"></div>
                     <div class="washed-process-title">Washing & Drying
                     </div>
-                    <div class="washed-process-desc">Beans are thoroughly washed and then dried on raised beds or patios under careful monitoring</div>
+                    <div class="washed-process-desc">Beans are thoroughly washed and then dried on raised beds or patios under careful monitoring
+                    </div>
                 </div>
                 <div class="washed-process-card" data-step="4">
                     <div class="washed-process-num">04</div>
@@ -91,107 +95,69 @@
 </section>
 
 
+<?php
+$coffee_types = [
+    [
+        'image' => './assets/img/c_bottle_1.png',
+        'name' => 'Selection 9',
+        'description' => 'A finely crafted blend, Selection 9 offers a well-rounded flavor profile with a smooth, aromatic finish. Its balanced acidity and rich body make it a true coffee connoisseur\'s delight.'
+    ],
+    [
+        'image' => './assets/img/c_bottle_2.png',
+        'name' => 'Chandragiri',
+        'description' => 'A robust coffee with a bold and earthy flavor, offering a delightful interplay of bitterness and nutty undertones. Its full-bodied profile makes it ideal for espresso lovers.'
+    ],
+    [
+        'image' => './assets/img/c_bottle_3.png',
+        'name' => 'H R C',
+        'description' => '(Hybrid Robusta Coffee)<br>The H R C coffee brings together bold, earthy flavors with a hint of spice. Its deep, full-bodied nature provides an intense, satisfying experience for those who appreciate a robust cup.'
+    ],
+    [
+        'image' => './assets/img/c_bottle_4.png',
+        'name' => 'Y M G',
+        'description' => '(Yellow Maragogype)<br>Known for its delicate aroma and floral notes, Y M G offers a subtle sweetness with a smooth, silky texture. It\'s a perfect choice for those who prefer a refined and aromatic coffee experience.'
+    ],
+    [
+        'image' => './assets/img/c_bottle_5.png',
+        'name' => 'Selection 5 B',
+        'description' => 'A blend of fine beans, Selection 5 B delivers a medium roast with a balanced flavor profile. Expect smooth notes of chocolate and mild acidity, perfect for a relaxing coffee break.'
+    ]
+];
+?>
+
 <section class="types-coffee-section">
     <h2 class="types-coffee-title">Types of Coffee</h2>
-    <div class="swiper types-coffee-swiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_1.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Selection 9</h3>
-                        <p>A finely crafted blend, Selection 9 offers a well-rounded flavor profile with a smooth, aromatic finish. Its balanced acidity and rich body make it a true coffee connoisseur’s delight.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_2.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Chandragiri</h3>
-                        <p>A robust coffee with a bold and earthy flavor, offering a delightful interplay of bitterness and nutty undertones. Its full-bodied profile makes it ideal for espresso lovers.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_3.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>H R C</h3>
-                        <p>(Hybrid Robusta Coffee)<br>The H R C coffee brings together bold, earthy flavors with a hint of spice. Its deep, full-bodied nature provides an intense, satisfying experience for those who appreciate a robust cup.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_4.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Y M G</h3>
-                        <p>(Yellow Maragogype)<br>Known for its delicate aroma and floral notes, Y M G offers a subtle sweetness with a smooth, silky texture. It’s a perfect choice for those who prefer a refined and aromatic coffee experience.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_5.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Selection 5 B</h3>
-                        <p>A blend of fine beans, Selection 5 B delivers a medium roast with a balanced flavor profile. Expect smooth notes of chocolate and mild acidity, perfect for a relaxing coffee break.</p>
-                    </div>
-                </div>
-            </div>
+    <div class="row align-items-center gy-5 gy-lg-0">
+        <div class="col-lg-4 " style="">
+            <div class="highlight-item">
 
+                <div>
+                    <img src="" alt="">
+                </div>
+                <div>
+                    <div class="title"></div>
+                    <div class="description"></div>
+                </div>
 
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_1.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Selection 9</h3>
-                        <p>A finely crafted blend, Selection 9 offers a well-rounded flavor profile with a smooth, aromatic finish. Its balanced acidity and rich body make it a true coffee connoisseur’s delight.</p>
-                    </div>
-                </div>
             </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_2.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Chandragiri</h3>
-                        <p>A robust coffee with a bold and earthy flavor, offering a delightful interplay of bitterness and nutty undertones. Its full-bodied profile makes it ideal for espresso lovers.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_3.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>H R C</h3>
-                        <p>(Hybrid Robusta Coffee)<br>The H R C coffee brings together bold, earthy flavors with a hint of spice. Its deep, full-bodied nature provides an intense, satisfying experience for those who appreciate a robust cup.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_4.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Y M G</h3>
-                        <p>(Yellow Maragogype)<br>Known for its delicate aroma and floral notes, Y M G offers a subtle sweetness with a smooth, silky texture. It’s a perfect choice for those who prefer a refined and aromatic coffee experience.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide" data-bottle="./assets/img/c_bottle_5.png">
-                <div class="types-coffee-card">
-                    <span class="types-coffee-bottle"></span>
-                    <div class="types-coffee-info">
-                        <h3>Selection 5 B</h3>
-                        <p>A blend of fine beans, Selection 5 B delivers a medium roast with a balanced flavor profile. Expect smooth notes of chocolate and mild acidity, perfect for a relaxing coffee break.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
         </div>
-
+        <div class="col-lg-8">
+            <div class="px-3 px-lg-0">
+                <div class="types-coffee-swiper">
+                    <?php foreach ($coffee_types as $coffee): ?>
+                        <div class="item" data-bottle="<?php echo htmlspecialchars($coffee['image']); ?>">
+                        <div class="types-coffee-card">
+                            <span class="types-coffee-bottle"></span>
+                            <div class="types-coffee-info">
+                                    <h3><?php echo htmlspecialchars($coffee['name']); ?></h3>
+                                    <p><?php echo $coffee['description']; ?></p>
+                                    </div>
+                                    </div>
+                                    </div>
+                    <?php endforeach; ?>
+                    </div>
+                    </div>
+                    </div>
     </div>
     <button class="types-coffee-btn">
         Request a Sample Today
@@ -206,36 +172,76 @@
 </section>
 
 <?php include './include/footer.php'; ?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        var swiper = new Swiper('.types-coffee-swiper', {
-            slidesPerView: 1,
-            spaceBetween: 24,
-            loop: true,
-            centeredSlides: false,
-            initialSlide: 0,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            speed: 900,
-            loopedSlides: 5,
-            breakpoints: {
-                600: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                },
-                900: {
-                    slidesPerView: 4,
-                    spaceBetween: 30
+    document.addEventListener( 'DOMContentLoaded', function ()
+    {
+
+        var items = document.querySelectorAll( '.types-coffee-swiper .types-coffee-card' );
+        var maxHeight = 0;
+        items.forEach( function ( item )
+        {
+            var itemHeight = item.offsetHeight;
+            if ( itemHeight > maxHeight ) {
+                maxHeight = itemHeight;
+            }
+        } );
+        items.forEach( function ( item )
+        {
+            // only desktop
+            if ( window.innerWidth > 768 ) {
+                item.style.height = maxHeight + 200 + 'px';
+            }
+        } );
+
+        function highlightItem( { displayIndex } )
+        {
+
+            let products = <?php echo json_encode($coffee_types); ?>;
+                // if the displayIndex is less than 0, set it to 0
+                console.log( 'displayIndex', displayIndex, 'product index', displayIndex - 2 );
+                if ( displayIndex <= 1 ) {
+                    displayIndex = 6
                 }
+                let description = products[ displayIndex - 2 ];
+                document.querySelector( '.highlight-item img' ).src = description.image ?? '';
+                document.querySelector( '.highlight-item .title' ).innerHTML = description.name ?? '';
+                document.querySelector( '.highlight-item .description' ).innerHTML = description.description ?? '';
+            }
+
+            var slider = tns( {
+                container: '.types-coffee-swiper',
+                items: 3.5,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                speed: 1500,
+                controls: false,
+                startIndex: 1,
+                autoplayButtonOutput: false,
+                nav: false,
+                mouseDrag: true,
+            loop: true,
+            center: false,
+            gutter: 20,
+            onInit: function ( info, eventName )
+            {
+                console.log( 'info', info.displayIndex );
+                highlightItem( { displayIndex: info.displayIndex } );
             },
-             
-        });
-        swiper.autoplay.start(); // <-- Force autoplay to start
- 
+            responsive: {
+                0: {
+                    items: 1.5,
+                },
+                768: {
+                    items: 3.5,
+                }
+            }
+        } );
+
+        slider.events.on( 'transitionEnd', highlightItem );
+
+
         var steps = document.querySelectorAll('.washed-process-card');
         var line = document.querySelector('.washed-process-line-progress');
         var totalSteps = steps.length;
@@ -275,5 +281,6 @@
                 line.style.width = '0%';
             }
         });
-    });
+
+    } );
 </script>

@@ -27,6 +27,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Gotham Normal";
   src: url("../fonts/gotham/GOTHAM-MEDIUM.TTF") format("truetype");
@@ -288,7 +289,7 @@ nav a::after {
   border-radius: 2px;
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 nav a:hover::after,
@@ -419,8 +420,7 @@ header.sticky {
   width: 15px;
   height: 19px;
   margin-left: 0.3em;
-  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>")
-    no-repeat center center;
+  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>") no-repeat center center;
   background-size: contain;
   vertical-align: middle;
   transition: margin-left 0.2s;
@@ -611,8 +611,7 @@ header.sticky {
   width: 15px;
   height: 19px;
   margin-left: 0.3em;
-  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>")
-    no-repeat center center;
+  background: url("data:image/svg+xml;utf8,<svg width='15' height='19' viewBox='0 0 15 19' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M1 1L14 10.2L1 18' stroke='white' stroke-linecap='round'/></svg>") no-repeat center center;
   background-size: contain;
   vertical-align: middle;
   transition: margin-left 0.2s;
@@ -630,7 +629,7 @@ footer {
   background: black;
   color: #fff;
   padding: 0;
-   display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -932,12 +931,14 @@ footer {
   align-items: center;
   padding: 0px 0px 90px 0;
 }
+
 .info-card {
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.1);
   color: #fff;
-  height: 420px; /* Initial height */
+  height: 420px;
+  /* Initial height */
   max-height: 420px;
   min-height: 420px;
   transition:
@@ -1076,10 +1077,12 @@ footer {
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
+
 .spacing-section {
   height: 35vh;
   background: #000;
 }
+
 .sustainability-hero-desc {
   font-family: "Gotham Thin", sans-serif;
   font-size: 0.9rem;
@@ -1136,6 +1139,7 @@ footer {
   font-weight: 300;
   margin-bottom: 1.5rem;
 }
+
 .spacing-section {
   height: 50vh;
   background: #000;
@@ -1257,6 +1261,7 @@ footer {
   display: flex;
   flex-direction: row;
 }
+
 .washed-process-line {
   position: absolute;
   top: 105px;
@@ -1428,6 +1433,7 @@ footer {
 .coffee-jar:hover {
   transform: scale(1.05) translateY(-10px) !important;
 }
+
 .washed-process-title {
   font-family: "Gotham Thin", Arial, sans-serif;
   font-size: 1.12rem;
@@ -1478,9 +1484,9 @@ footer {
   background: #000;
   color: #fff;
   padding: 3rem 0 2rem 0;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .types-coffee-title {
@@ -1496,10 +1502,10 @@ footer {
 .types-coffee-swiper {
   background: transparent;
   padding: 0;
-  padding-left: 40px !important;
-  max-width: 100vw;
-  overflow: visible;
-  width: 100%;
+  /* padding-left: 40px !important; */
+  /* max-width: 100vw; */
+  /* overflow: visible; */
+  /* width: 100%; */
 }
 
 .types-coffee-swiper .swiper-wrapper {
@@ -1514,11 +1520,11 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  min-width: 250px;
-  max-width: 300px;
-  height: 350px;
-  width: 100%;
-  padding: 30px;
+  /* min-width: 250px; */
+  /* max-width: 300px; */
+  /* height: 350px; */
+  /* width: 100%; */
+  padding: 1rem;
   margin: 0;
   transition: none;
   position: relative;
@@ -1535,6 +1541,7 @@ footer {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .active-coffee-card .types-coffee-bottle {
   display: block;
   margin-right: 2.2rem;
@@ -1564,12 +1571,11 @@ footer {
 }
 
 .types-coffee-info {
-  display: flex
-  ;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 100%;
-     align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
 }
 
 .types-coffee-info h3 {
@@ -1636,10 +1642,11 @@ footer {
   margin-bottom: 0.4rem;
   font-family: "Nuosusil Regular", serif;
 }
+
 .swiper-backface-hidden .swiper-slide {
   margin-right: 0px !important;
 }
- 
+
 .active-coffee-card .types-coffee-info p {
   font-size: 1.18rem !important;
   color: #e0e0e0 !important;
@@ -1647,7 +1654,7 @@ footer {
   line-height: 1.6;
   margin-top: 0.2rem;
 }
- 
+
 .active-coffee-card .types-coffee-bottle img {
   width: 100%;
   height: 100%;
@@ -1658,7 +1665,7 @@ footer {
 }
 
 .active-coffee-card {
-   border-radius: 32px;
+  border-radius: 32px;
   margin-left: 60px !important;
 }
 
@@ -1837,6 +1844,7 @@ footer {
     row-gap: 4rem;
     padding: 20px 20px 40px 20px;
   }
+
   .info-card {
     max-width: 350px;
     min-width: 100px;
@@ -1849,51 +1857,63 @@ footer {
     font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
+
   .info-card p {
     font-size: 0.95rem;
     margin-bottom: 2rem;
   }
+
   .info-card img {
     height: 70px;
     bottom: -30px;
   }
+
   .washed-process-arrow {
     width: 36px;
     height: 36px;
     font-size: 1.1rem;
     right: 1vw;
   }
+
   .footer-logo img {
     max-width: 250px !important;
     height: auto;
   }
+
   .smoke-btn span {
     font-size: 1.2rem;
   }
+
   .smoke-btn svg {
     width: 20px;
     height: 20px;
   }
+
   .coffee-hero-section {
     min-height: 480px;
     height: 100%;
     max-height: 540px;
   }
+
   .coffee-hero-content h1 {
     font-size: 3rem;
   }
+
   .washed-process-content h2 {
     font-size: 2rem;
   }
+
   .washed-process-cards {
     flex-direction: row;
     gap: 0.2rem;
     min-height: 70px;
     padding: 0.5rem 0;
   }
+
   .washed-process-card {
     font-size: 1rem;
   }
+
   .washed-process-arrow {
     width: 32px;
     height: 32px;
@@ -1901,12 +1921,14 @@ footer {
     right: 0.5rem;
     bottom: 0.5rem;
   }
+
   .washed-process-arrow {
     width: 28px;
     height: 28px;
     font-size: 0.9rem;
     right: 0.5vw;
   }
+
   .coffee-jars-row {
     gap: 0.5vw;
     min-height: 120px;
@@ -1922,22 +1944,27 @@ footer {
     min-width: 40px;
     padding: 0.1em 0.2em;
   }
+
   .washed-process-subtitle {
     font-size: 1rem !important;
   }
+
   .coffee-hero-content {
     bottom: -200px;
   }
+
   .hero {
     height: 60vh;
   }
 }
+
 /* --- End Washed Process Section: SMOKE BG & Layout --- */
 @media (min-width: 560px) and (max-width: 768px) {
   .navbar {
     flex-direction: row;
     gap: 0.5rem;
   }
+
   .smoke-img {
     height: 100%;
     max-width: 600px;
@@ -1947,56 +1974,71 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
   }
+
   .hero-links span {
     font-size: clamp(1.2rem, 3vw, 1.2rem);
   }
+
   #mainNav {
     max-width: 100vw;
     padding: 1.2rem 1rem;
   }
+
   html {
     font-size: 15px;
   }
+
   .container {
     width: 99%;
     max-width: 100vw;
     padding: 0 0.5rem;
   }
+
   .hero {
     height: 60vh;
   }
+
   .beyond-content {
     max-width: 98vw;
     padding: 0 0.5rem;
   }
+
   .hero-content {
     max-width: 98vw;
     padding: 0 0.5rem;
   }
+
   .beyond-content h1 {
     font-size: clamp(2.5rem, 5vw, 2rem) !important;
   }
+
   .hero-content h1 {
     font-size: clamp(2.5rem, 5vw, 2rem) !important;
   }
+
   .welcome-section {
     padding: 1rem 0;
   }
+
   .welcome-img {
     min-width: unset;
   }
+
   .welcome-content h2 {
     font-size: clamp(2.2rem, 4vw, 2.3rem);
   }
+
   .welcome-content .welcome-subtitle {
     font-size: 1.2rem;
     margin-bottom: 10px;
   }
+
   .footer-row {
     padding: 1.2rem 0 0.7rem 0;
     flex-direction: column;
     gap: 1rem;
   }
+
   .logo img {
     height: 40px;
   }
@@ -2005,11 +2047,13 @@ footer {
     flex-direction: column;
     gap: 1rem;
   }
+
   .card {
     padding: 0.8rem;
     min-width: 120px;
     max-width: 98vw;
   }
+
   .footer-row {
     flex-direction: column;
     align-items: center;
@@ -2017,10 +2061,12 @@ footer {
     padding: 1.2rem 0 0.7rem 0;
     width: 99%;
   }
+
   .footer-logo img {
     max-width: 300px;
     height: auto;
   }
+
   .footer-logo {
     min-width: unset;
     max-width: 90vw;
@@ -2028,6 +2074,7 @@ footer {
     align-items: center;
     text-align: center;
   }
+
   .footer-contact,
   .footer-address,
   .footer-links {
@@ -2037,10 +2084,12 @@ footer {
     text-align: center !important;
     font-size: 1rem;
   }
+
   .footer-links {
     margin-top: 0.5rem;
     gap: 0.5rem;
   }
+
   .footer-address {
     margin-top: 0.5rem;
   }
@@ -2054,6 +2103,7 @@ footer {
     padding: 50px 20px;
     min-height: unset;
   }
+
   .info-card {
     max-width: 350px;
     min-width: 100px;
@@ -2061,6 +2111,7 @@ footer {
     padding: 1rem 0.3rem 1.5rem 0.3rem;
     border-radius: 30px;
   }
+
   .info-card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.7rem;
@@ -2070,9 +2121,11 @@ footer {
     height: 80px;
     bottom: -40px;
   }
+
   .info-cards-section {
     padding: 0 !important;
   }
+
   .info-cards-container {
     padding-bottom: 40px !important;
   }
@@ -2080,11 +2133,13 @@ footer {
   .info-card {
     max-width: 98vw;
   }
+
   .info-card:nth-child(3) {
     grid-column: 1 / -1;
     justify-self: center;
     max-width: 400px;
   }
+
   #mainNav {
     width: 100%;
     max-width: 350px;
@@ -2097,43 +2152,55 @@ footer {
     padding: 1.2rem 0.7rem 2rem 0.7rem;
     border-radius: 40px;
   }
+
   .info-card h3 {
     font-size: 1.3rem;
     margin-bottom: 0.7rem;
   }
+
   .info-card p {
     font-size: 1rem;
     margin-bottom: 2.5rem;
   }
+
   .info-card img {
     height: 100px;
     bottom: -40px;
   }
+
   .beyond-content h1 {
     font-size: clamp(2rem, 5vw, 2.5rem);
   }
+
   .beyond-link {
     font-size: 1.5rem !important;
   }
+
   .smoke-btn span {
     font-size: 1.5rem;
   }
+
   .smoke-btn svg {
     width: 25px;
     height: 25px;
   }
+
   .washed-process-subtitle {
     font-size: 1.1rem !important;
   }
+
   .washed-process-content h2 {
     font-size: 1.6rem;
   }
+
   .coffee-hero-content {
     bottom: -170px;
   }
+
   .washed-process-content {
     margin-top: 210px;
   }
+
   .coffee-jars-row {
     gap: 1vw;
     min-height: 320px;
@@ -2146,11 +2213,13 @@ footer {
     align-items: center;
     padding: 20px 20px 0px 20px;
   }
+
   .story-content {
     flex: 1 1 50%;
     max-width: 100%;
     padding: 2rem 0;
   }
+
   .logo {
     width: 100%;
     margin-left: 1rem;
@@ -2159,6 +2228,7 @@ footer {
     align-items: center;
     margin-bottom: 0.5rem;
   }
+
   .logo img {
     height: 36px;
     width: auto;
@@ -2169,6 +2239,7 @@ footer {
   .coffee-hero-bg {
     filter: brightness(0.6);
   }
+
   .footer-row {
     flex-direction: column;
     align-items: center;
@@ -2176,17 +2247,20 @@ footer {
     padding: 2rem 0 1rem 0;
     width: 98%;
   }
+
   .footer-left,
   .footer-right {
     width: 100%;
     align-items: center;
     justify-content: center;
   }
+
   .footer-right {
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 1rem;
   }
+
   .footer-logo,
   .footer-contact,
   .footer-address,
@@ -2196,35 +2270,43 @@ footer {
     min-width: unset;
     margin: 0 auto;
   }
+
   .footer-address {
     text-align: center !important;
     margin-top: 0.5rem;
   }
+
   .footer-links {
     align-items: center !important;
     margin-top: 0.5rem;
   }
+
   .story-content p {
     font-size: 1rem;
   }
+
   .coffee-hero-content {
     margin-left: 3%;
     max-width: 95vw;
     padding: 1.5rem 0.7rem 1.5rem 0.7rem;
   }
+
   .washed-process-content {
     padding: 2rem 1rem 2rem 1rem;
     margin-top: 200px !important;
   }
+
   .washed-process-cards {
     gap: 1.5rem;
     max-width: 98vw;
   }
+
   .washed-process-card {
     width: 100%;
     height: auto;
     font-size: 1.5rem;
   }
+
   .washed-process-arrow {
     width: 40px;
     height: 40px;
@@ -2232,64 +2314,80 @@ footer {
     right: 1rem;
     bottom: 1rem;
   }
+
   .welcome-section {
     flex-direction: column;
     padding: 2.5rem 0;
   }
+
   .hero-content h1 {
     font-size: clamp(2rem, 5vw, 2.5rem);
   }
+
   .partner-section {
     padding: 30px 0 40px 0;
   }
+
   .partner-info h2 {
     font-size: 3rem;
   }
+
   .partner-info p {
     font-size: 1.2rem;
   }
+
   .partner-form-group label {
     font-size: 0.93rem;
   }
+
   .partner-form-group input,
   .partner-form-group textarea {
     font-size: 0.98rem;
   }
+
   .our-people-story-smoke-content {
     font-size: 0.98rem;
     padding: 0 4vw;
   }
+
   .our-people-story-smoke {
     padding: 40px 0 30px 0;
   }
+
   .types-coffee-section {
     padding-bottom: 18px;
   }
+
   .types-coffee-title {
     font-size: 1.2rem;
     margin: 1.2rem 0 0.7rem 0;
   }
+
   .types-coffee-card {
     min-width: 90vw;
     max-width: 98vw;
     padding: 0 0.5vw;
   }
- 
+
   .types-coffee-bottle img {
     width: 38px;
     height: 60px;
   }
+
   .types-coffee-info h3 {
     font-size: 1rem;
   }
+
   .types-coffee-info p {
     font-size: 0.93rem;
   }
+
   .types-coffee-btn {
     font-size: 0.9rem;
     padding: 0.5em 1.2em;
     margin-top: 1.2rem;
   }
+
   .navbar {
     flex-wrap: wrap;
     flex-direction: row;
@@ -2297,53 +2395,64 @@ footer {
     position: relative;
     justify-content: space-between;
   }
+
   .types-coffee-section {
     padding-bottom: 18px;
   }
+
   .types-coffee-title {
     font-size: 1.2rem;
     margin: 1.2rem 0 0.7rem 0;
   }
+
   .types-coffee-card {
     min-width: 90vw;
     max-width: 98vw;
     height: 180px;
     padding: 0.7rem 0.2rem 0.7rem 0.2rem;
   }
+
   .types-coffee-bottle {
     width: 38px;
     min-width: 38px;
     height: 60px;
     margin-right: 0.3rem;
   }
+
   .types-coffee-bottle img {
     width: 38px;
     height: 60px;
   }
- 
+
   .types-coffee-info h3 {
     font-size: 1rem;
   }
+
   .types-coffee-info p {
     font-size: 0.93rem;
   }
+
   .types-coffee-btn {
     font-size: 0.9rem;
     padding: 0.5em 1.2em;
     margin-top: 1.2rem;
   }
+
   .washed-process-section {
     padding: 0;
   }
+
   .smoke-section {
     height: 50vh;
   }
+
   .welcome-content {
     padding: 2rem;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
   img,
   .hero-img,
   .welcome-main-img,
@@ -2351,6 +2460,7 @@ footer {
     width: 100%;
     height: 100%;
   }
+
   .smoke-img {
     height: 100%;
     width: 100%;
@@ -2365,36 +2475,46 @@ footer {
   .hero-content h1 {
     font-size: clamp(3.5rem, 4vw, 2.5rem) !important;
   }
+
   .beyond-content h1 {
     font-size: clamp(3.5rem, 4vw, 2.5rem) !important;
   }
+
   .welcome-section {
     flex-direction: column;
     padding: 2.5rem 0;
   }
+
   .welcome-img {
     min-width: unset;
   }
+
   .welcome-content {
     padding: 1.5rem 1rem;
   }
+
   .card-section {
     gap: 1.2rem;
   }
+
   .logo img {
     height: 40px;
   }
+
   .washed-process-subtitle {
     font-size: 1.2rem !important;
   }
+
   header {
     padding: 0.8rem 10px;
   }
+
   .card {
     padding: 1.2rem;
     min-width: 180px;
     max-width: 98vw;
   }
+
   .info-cards-wrapper {
     flex-direction: column;
     align-items: stretch;
@@ -2403,6 +2523,7 @@ footer {
     min-height: 80vh;
     padding: 50px 20px;
   }
+
   .info-card {
     max-width: 98vw;
     min-width: 140px;
@@ -2410,30 +2531,38 @@ footer {
     margin: 0 auto;
     padding: 1.2rem 0.7rem 2rem 0.7rem;
   }
+
   .info-card img {
     height: 100px;
     bottom: -60px;
   }
+
   .washed-process-content h2 {
     font-size: 1.9rem;
   }
+
   .washed-process-section {
     padding: 0;
   }
+
   .coffee-hero-content {
     bottom: -170px !important;
   }
+
   .washed-process-content {
     margin-top: 190px !important;
   }
+
   .smoke-section {
     height: 70vh;
   }
+
   .coffee-jars-row {
     gap: 1vw;
     min-height: 320px;
   }
 }
+
 @media (max-width: 900px) {
   .navbar {
     flex-wrap: wrap;
@@ -2442,12 +2571,14 @@ footer {
     position: relative;
     justify-content: space-between;
   }
+
   .navbar-toggle {
     display: block;
     position: absolute;
     right: 1rem;
     margin-left: 0;
   }
+
   #mainNav {
     display: none;
     position: absolute;
@@ -2462,58 +2593,72 @@ footer {
     z-index: 1001;
     border-radius: 0 0 10px 10px;
   }
+
   #mainNav.nav-open {
     display: flex !important;
   }
+
   #mainNav ul {
     flex-direction: column;
     gap: 1.2rem;
     width: 100%;
   }
+
   nav ul {
     gap: 1.2rem;
   }
 
 }
+
 @media (min-width: 768px) and (max-width: 900px) {
+
   .container,
   .container-md,
   .container-sm {
     max-width: 900px !important;
   }
 }
+
 @media (min-width: 1024px) and (max-width: 1440px) {
   .container {
     width: 96%;
     max-width: 1000px;
   }
+
   .beyond-content,
   .hero-content {
     max-width: 620px;
   }
+
   .welcome-content {
     padding: 2rem 1.2rem;
   }
+
   .smoke-img {
     max-width: 1200px;
   }
+
   .story-section {
     flex-direction: column;
     padding-bottom: 30px;
   }
+
   .story-img,
   .story-content {
     min-width: unset;
     max-width: 100vw;
     padding: 0;
   }
+
   .story-content {
     padding: 2rem 1.2rem;
   }
+
   .info-cards-section {
     flex-direction: column;
     padding: 40px 0 20px 0;
   }
+
   .info-card {
     max-width: 98vw;
     min-width: 180px;
@@ -2524,6 +2669,7 @@ footer {
     max-height: 700px;
     min-height: 250px;
   }
+
   .info-cards-wrapper {
     flex-direction: column;
     align-items: stretch;
@@ -2531,19 +2677,23 @@ footer {
     padding: 50px 0;
     min-height: unset;
   }
+
   .info-card {
     max-width: 98vw;
     min-width: 180px;
     margin: 0 auto;
     padding: 1.5rem 1rem 2.5rem 1rem;
   }
+
   .info-card img {
     height: 150px;
     bottom: -90px;
   }
+
   .washed-process-content h2 {
     font-size: 2.7rem;
   }
+
   .coffee-jars-row {
     gap: 1vw;
     min-height: 350px;
@@ -2555,11 +2705,13 @@ footer {
     top: 85px;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .washed-process-line {
     top: 95px;
   }
 }
+
 @media (max-width: 1024px) {
   .partner-container {
     flex-direction: column;
@@ -2568,11 +2720,13 @@ footer {
     align-items: stretch;
     max-width: 98vw;
   }
+
   .partner-info {
     margin-left: 0;
     margin-top: 12px;
     align-items: flex-start;
   }
+
   .partner-form {
     max-width: 100vw;
   }
@@ -2588,68 +2742,81 @@ footer {
     min-width: 70px;
     padding: 0.2em 0.4em;
   }
+
   .types-coffee-card {
     min-width: 220px;
     max-width: 340px;
     padding: 0 1vw;
   }
- 
+
   .types-coffee-bottle img {
     width: 60px;
     height: 120px;
   }
+
   .types-coffee-info h3 {
     font-size: 1.3rem;
   }
+
   .types-coffee-info p {
     font-size: 1rem;
   }
+
   .types-coffee-card {
     min-width: 180px;
     max-width: 260px;
     height: 260px;
     padding: 1.2rem 0.5rem 1.2rem 0.5rem;
   }
+
   .types-coffee-bottle {
     width: 60px;
     min-width: 60px;
     height: 120px;
     margin-right: 0.7rem;
   }
+
   .types-coffee-bottle img {
     width: 60px;
     height: 120px;
   }
-   
+
   .washed-process-cards {
     gap: 0.5rem;
   }
+
   .washed-process-card {
     max-width: 200px;
     min-width: 80px;
   }
+
   .washed-process-cards {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
     padding: 20px;
   }
+
   .washed-process-line,
   .washed-process-line-progress {
     display: none;
   }
+
   .washed-process-card {
     max-width: 70vw;
     min-width: 0;
     margin-bottom: 1.5rem;
     align-items: center;
   }
+
   .washed-process-num {
     font-size: 2rem;
   }
+
   .washed-process-title {
-    font-size:  1rem;
+    font-size: 1rem;
   }
+
   .washed-process-desc {
     font-size: 0.97rem;
   }
@@ -2662,6 +2829,7 @@ footer {
     padding: 60px 20px;
     min-height: 110vh;
   }
+
   .info-card {
     max-width: 450px;
     min-width: 220px;
@@ -2669,14 +2837,17 @@ footer {
     max-height: 400px;
     padding: 2.5rem 1.2rem 3rem 1.2rem;
   }
+
   .info-card h3 {
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+
   .info-card p {
     font-size: 1.05rem;
     margin-bottom: 1.5rem;
   }
+
   .info-card img {
     height: 150px;
     bottom: -70px;
@@ -2688,30 +2859,39 @@ footer {
     margin-top: 60px;
     max-width: 1400px;
   }
+
   .smoke-section {
     height: 100vh;
   }
+
   .smoke-container {
     padding: 0;
   }
+
   .welcome-section {
     padding: 40px 0px 100px 0px;
   }
+
   .info-cards-wrapper {
     max-width: 80vw !important;
   }
+
   .story-content p {
     font-size: 1.2rem !important;
   }
+
   .story-img {
     max-width: 1020px !important;
   }
+
   .coffee-hand-section img {
     max-height: 800px;
   }
+
   .washed-process-line {
     top: 105px;
   }
+
   .info-card {
     max-width: 450px;
     min-width: 220px;
@@ -2720,12 +2900,73 @@ footer {
     padding: 2.5rem 1.2rem 3rem 1.2rem;
   }
 }
- 
+
 .types-coffee-swiper .swiper-slide.swiper-slide-visible.swiper-slide-active {
   margin-right: 30px !important;
 }
+
 .types-coffee-swiper .swiper-slide {
   margin-right: 0 !important;
   display: flex;
   justify-content: center;
+}
+
+
+.highlight-item {
+  /* width: calc(var(--width-of-first-item) * 1 + 200px + 2rem); */
+  /* height: 100%; */
+  /* position: absolute; */
+  /* left: 0; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  display: grid;
+  grid-template-columns: 30% 10% 1fr;
+  gap: 1rem;
+  align-items: center;
+
+}
+
+@media (max-width: 768px) {
+  .highlight-item {
+    grid-template-columns: auto 0% 1fr;
+  }
+}
+
+
+
+.highlight-item>div:nth-child(1) {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  padding: 1rem;
+  /* height: 100%; */
+  text-align: center;
+  display: flex;
+  margin-right: -4rem;
+  justify-content: center;
+}
+
+.highlight-item img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  max-height: 20rem;
+}
+
+.highlight-item>div:nth-child(2) {
+  padding: 2rem 2rem 2rem 4rem;
+  grid-row: 1;
+  grid-column: 2 / -1;
+  border-radius: 20px;
+  height: 100%;
+  border: 1px solid white;
+  background: #1d1d1d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.highlight-item>div:nth-child(2)>div:nth-child(1) {
+  font-size: 2rem;
 }
