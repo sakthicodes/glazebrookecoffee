@@ -199,8 +199,6 @@ $coffee_types = [
         {
 
             let products = <?php echo json_encode($coffee_types); ?>;
-                // if the displayIndex is less than 0, set it to 0
-                console.log( 'displayIndex', displayIndex, 'product index', displayIndex - 2 );
                 if ( displayIndex <= 1 ) {
                     displayIndex = 6
                 }

@@ -226,7 +226,7 @@ img,
 header {
   border-bottom: 2px solid #444;
   background: rgb(0 0 0 / 91%);
-  padding: 0.8rem 0;
+  padding: 1.2rem 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -1002,8 +1002,7 @@ footer {
   margin: 0% 4% 0% 0%;
   max-width: 600px;
   padding: 2rem 3rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
 }
 
 .coffee-hero-content h1 {
@@ -1121,6 +1120,9 @@ footer {
   padding: 2rem 3rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
   text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+  color: white !important;
 }
 
 .our-people-hero-content h1 {
@@ -1264,16 +1266,14 @@ footer {
 
 .washed-process-line {
   position: absolute;
-  top: 105px;
-  left: 0;
-  right: 0;
+  top: 105px; /* Fixed value for all devices */
+  left: 60px;
+  right: 60px;
   height: 3px;
   background: rgba(255, 255, 255, 0.13);
   border-radius: 2px;
   z-index: 1;
   width: calc(100% - 270px);
-  left: 60px;
-  right: 60px;
   margin: 0 auto;
 }
 
@@ -1849,6 +1849,9 @@ footer {
     max-width: 350px;
     min-width: 100px;
     margin: 0 auto;
+    height: 270px;
+    max-height: 420px;
+    min-height: 250px;
     padding: 1.5rem;
     border-radius: 30px;
   }
@@ -1859,8 +1862,13 @@ footer {
   }
 
   .info-card p {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
+  }
+  .info-card:hover {
+    height: 300px;
+    max-height: 350px;
+    min-height: 300px;
   }
 
   .info-card img {
@@ -1892,8 +1900,7 @@ footer {
   .coffee-hero-section {
     min-height: 480px;
     height: 100%;
-    max-height: 540px;
-  }
+   }
 
   .coffee-hero-content h1 {
     font-size: 3rem;
@@ -1921,7 +1928,16 @@ footer {
     right: 0.5rem;
     bottom: 0.5rem;
   }
+  .smoke-section {
+    height: 30vh !important;
+  }
 
+  .welcome-btn span {
+    font-size: 1rem;
+  }
+  .hero-links a span {
+    font-size: 1.2rem !important;
+  }
   .washed-process-arrow {
     width: 28px;
     height: 28px;
@@ -1931,7 +1947,7 @@ footer {
 
   .coffee-jars-row {
     gap: 0.5vw;
-    min-height: 120px;
+    min-height: 150px;
   }
 
   .coffee-jar {
@@ -1953,18 +1969,50 @@ footer {
     bottom: -200px;
   }
 
+  .spacing-section {
+    height: 30vh;
+  }
   .hero {
     height: 60vh;
   }
-}
+  .sustainability-hero-section {
+    height: 60vh;
+  }
+  .contactus-hero-section {
+    height: 60vh;
+  }
+  .our-people-hero-section {
+    height: 60vh;
+  }
+  .coffee-hero-section{
+    height: 60vh;
+  }
 
-/* --- End Washed Process Section: SMOKE BG & Layout --- */
-@media (min-width: 560px) and (max-width: 768px) {
+}
+ 
+@media (max-width: 768px) and (min-width: 560px) {
   .navbar {
     flex-direction: row;
     gap: 0.5rem;
   }
-
+  .spacing-section {
+    height: 50vh;
+  }
+  .partner-info h2 {
+    margin-bottom: 1rem;
+  }
+  .sustainability-hero-section {
+    height: 70vh;
+  }
+  .contactus-hero-section {
+    height: 70vh;
+  }
+  .our-people-hero-section {
+    height: 70vh;
+  }
+  .coffee-hero-section{
+    height: 70vh;
+  }
   .smoke-img {
     height: 100%;
     max-width: 600px;
@@ -1972,7 +2020,7 @@ footer {
 
   .hero-links {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
   }
 
   .hero-links span {
@@ -1983,7 +2031,9 @@ footer {
     max-width: 100vw;
     padding: 1.2rem 1rem;
   }
-
+  .hero-links a span {
+    font-size: 1.7rem !important;
+  }
   html {
     font-size: 15px;
   }
@@ -2000,12 +2050,12 @@ footer {
 
   .beyond-content {
     max-width: 98vw;
-    padding: 0 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
 
   .hero-content {
     max-width: 98vw;
-    padding: 0 0.5rem;
+    padding: 1.5rem 0.5rem;
   }
 
   .beyond-content h1 {
@@ -2117,8 +2167,13 @@ footer {
     margin-bottom: 0.7rem;
   }
 
+  .info-card p {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
   .info-card img {
-    height: 80px;
+    height: 100px;
     bottom: -40px;
   }
 
@@ -2203,7 +2258,7 @@ footer {
 
   .coffee-jars-row {
     gap: 1vw;
-    min-height: 320px;
+    min-height: 220px;
   }
 }
 
@@ -2327,9 +2382,10 @@ footer {
   .partner-section {
     padding: 30px 0 40px 0;
   }
+  
 
   .partner-info h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .partner-info p {
@@ -2337,16 +2393,16 @@ footer {
   }
 
   .partner-form-group label {
-    font-size: 0.93rem;
+    font-size: 1.2rem;
   }
 
   .partner-form-group input,
   .partner-form-group textarea {
-    font-size: 0.98rem;
+    font-size: 1.2rem;
   }
 
   .our-people-story-smoke-content {
-    font-size: 0.98rem;
+    font-size: 1.2rem;
     padding: 0 4vw;
   }
 
@@ -2397,11 +2453,13 @@ footer {
   }
 
   .types-coffee-section {
+    padding: 10px;
     padding-bottom: 18px;
   }
 
   .types-coffee-title {
     font-size: 1.2rem;
+    padding-bottom: 1rem;
     margin: 1.2rem 0 0.7rem 0;
   }
 
@@ -2431,11 +2489,11 @@ footer {
   .types-coffee-info p {
     font-size: 0.93rem;
   }
-
   .types-coffee-btn {
-    font-size: 0.9rem;
-    padding: 0.5em 1.2em;
-    margin-top: 1.2rem;
+    font-size: 1.2rem;
+    padding: 0.7em 1.2em;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
   }
 
   .washed-process-section {
@@ -2444,6 +2502,7 @@ footer {
 
   .smoke-section {
     height: 50vh;
+    padding: 10px 0px;
   }
 
   .welcome-content {
@@ -2451,7 +2510,7 @@ footer {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) and (min-width: 768px) {
 
   img,
   .hero-img,
@@ -2554,7 +2613,11 @@ footer {
   }
 
   .smoke-section {
-    height: 70vh;
+    height: 70vh !important;
+    padding: 20px 0px;
+  }
+  .logo img {
+    height: 40px !important;
   }
 
   .coffee-jars-row {
@@ -2610,7 +2673,7 @@ footer {
 
 }
 
-@media (min-width: 768px) and (max-width: 900px) {
+@media (max-width: 900px) and (min-width: 768px) {
 
   .container,
   .container-md,
@@ -2619,7 +2682,7 @@ footer {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1440px) and (min-width: 1024px) {
   .container {
     width: 96%;
     max-width: 1000px;
@@ -2682,7 +2745,7 @@ footer {
     max-width: 98vw;
     min-width: 180px;
     margin: 0 auto;
-    padding: 1.5rem 1rem 2.5rem 1rem;
+       padding: 1.5rem 1rem 2.5rem 1rem;
   }
 
   .info-card img {
@@ -2700,18 +2763,18 @@ footer {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
-  .washed-process-line {
-    top: 85px;
-  }
-}
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .washed-process-line {
-    top: 95px;
+    top: 95px !important;
   }
 }
-
+ 
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .washed-process-line {
+    top: 85px !important;
+  }
+}
 @media (max-width: 1024px) {
   .partner-container {
     flex-direction: column;
@@ -2810,15 +2873,15 @@ footer {
   }
 
   .washed-process-num {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .washed-process-title {
-    font-size: 1rem;
+     font-size: 1.2rem;
   }
 
   .washed-process-desc {
-    font-size: 0.97rem;
+    font-size: 1rem;
   }
 }
 
@@ -2889,7 +2952,7 @@ footer {
   }
 
   .washed-process-line {
-    top: 105px;
+    top: 105px; /* Fixed value for all devices */
   }
 
   .info-card {
