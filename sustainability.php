@@ -1,4 +1,4 @@
-<?php include './include/header.php'; ?>
+<?php include 'header.php'; ?>
 
 
 <section class="sustainability-hero-section">
@@ -20,7 +20,7 @@
 </section>
 <section class="spacing-section"></section>
 
-<?php include './include/footer.php'; ?>
+<?php include 'footer.php'; ?>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script>

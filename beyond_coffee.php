@@ -1,4 +1,4 @@
-<?php include './include/header.php'; ?>
+<?php include 'header.php'; ?>
 
 <section class="hero beyond-coffee">
     <img
@@ -104,4 +104,4 @@
     </div>
 </section>
 
-<?php include './include/footer.php'; ?>
+<?php include 'footer.php'; ?>

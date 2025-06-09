@@ -1,4 +1,4 @@
-<?php include './include/header.php'; ?>
+<?php include 'header.php'; ?>
 
 
 <section class="coffee-hero-section">
@@ -146,18 +146,18 @@ $coffee_types = [
                 <div class="types-coffee-swiper">
                     <?php foreach ($coffee_types as $coffee): ?>
                         <div class="item" data-bottle="<?php echo htmlspecialchars($coffee['image']); ?>">
-                        <div class="types-coffee-card">
-                            <span class="types-coffee-bottle"></span>
-                            <div class="types-coffee-info">
+                            <div class="types-coffee-card">
+                                <span class="types-coffee-bottle"></span>
+                                <div class="types-coffee-info">
                                     <h3><?php echo htmlspecialchars($coffee['name']); ?></h3>
                                     <p><?php echo $coffee['description']; ?></p>
-                                    </div>
-                                    </div>
-                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
-                    </div>
-                    </div>
-                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <button class="types-coffee-btn">
         Request a Sample Today
@@ -171,63 +171,62 @@ $coffee_types = [
     </div>
 </section>
 
-<?php include './include/footer.php'; ?>
+<?php include 'footer.php'; ?>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 <script>
-    document.addEventListener( 'DOMContentLoaded', function ()
-    {
+    document.addEventListener('DOMContentLoaded', function() {
 
-        var items = document.querySelectorAll( '.types-coffee-swiper .types-coffee-card' );
+        var items = document.querySelectorAll('.types-coffee-swiper .types-coffee-card');
         var maxHeight = 0;
-        items.forEach( function ( item )
-        {
+        items.forEach(function(item) {
             var itemHeight = item.offsetHeight;
-            if ( itemHeight > maxHeight ) {
+            if (itemHeight > maxHeight) {
                 maxHeight = itemHeight;
             }
-        } );
-        items.forEach( function ( item )
-        {
+        });
+        items.forEach(function(item) {
             // only desktop
-            if ( window.innerWidth > 768 ) {
+            if (window.innerWidth > 768) {
                 item.style.height = maxHeight + 200 + 'px';
             }
-        } );
+        });
 
-        function highlightItem( { displayIndex } )
-        {
+        function highlightItem({
+            displayIndex
+        }) {
 
             let products = <?php echo json_encode($coffee_types); ?>;
-                // if the displayIndex is less than 0, set it to 0
-                console.log( 'displayIndex', displayIndex, 'product index', displayIndex - 2 );
-                if ( displayIndex <= 1 ) {
-                    displayIndex = 6
-                }
-                let description = products[ displayIndex - 2 ];
-                document.querySelector( '.highlight-item img' ).src = description.image ?? '';
-                document.querySelector( '.highlight-item .title' ).innerHTML = description.name ?? '';
-                document.querySelector( '.highlight-item .description' ).innerHTML = description.description ?? '';
+            // if the displayIndex is less than 0, set it to 0
+            console.log('displayIndex', displayIndex, 'product index', displayIndex - 2);
+            if (displayIndex <= 1) {
+                displayIndex = 6
             }
+            let description = products[displayIndex - 2];
+            document.querySelector('.highlight-item img').src = description.image ?? '';
+            document.querySelector('.highlight-item .title').innerHTML = description.name ?? '';
+            document.querySelector('.highlight-item .description').innerHTML = description.description ?? '';
+        }
 
-            var slider = tns( {
-                container: '.types-coffee-swiper',
-                items: 3.5,
-                autoplay: true,
-                autoplayTimeout: 5000,
-                speed: 1500,
-                controls: false,
-                startIndex: 1,
-                autoplayButtonOutput: false,
-                nav: false,
-                mouseDrag: true,
+        var slider = tns({
+            container: '.types-coffee-swiper',
+            items: 3.5,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            speed: 1500,
+            controls: false,
+            startIndex: 1,
+            autoplayButtonOutput: false,
+            nav: false,
+            mouseDrag: true,
             loop: true,
             center: false,
             gutter: 20,
-            onInit: function ( info, eventName )
-            {
-                console.log( 'info', info.displayIndex );
-                highlightItem( { displayIndex: info.displayIndex } );
+            onInit: function(info, eventName) {
+                console.log('info', info.displayIndex);
+                highlightItem({
+                    displayIndex: info.displayIndex
+                });
             },
             responsive: {
                 0: {
@@ -237,9 +236,9 @@ $coffee_types = [
                     items: 3.5,
                 }
             }
-        } );
+        });
 
-        slider.events.on( 'transitionEnd', highlightItem );
+        slider.events.on('transitionEnd', highlightItem);
 
 
         var steps = document.querySelectorAll('.washed-process-card');
@@ -282,5 +281,5 @@ $coffee_types = [
             }
         });
 
-    } );
+    });
 </script>

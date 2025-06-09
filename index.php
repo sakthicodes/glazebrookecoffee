@@ -1,4 +1,4 @@
-<?php include './include/header.php'; ?>
+<?php include 'header.php'; ?>
 
 <section class="hero">
   <img
@@ -87,9 +87,9 @@
     </div>
   </div>
 </section>
-<?php include './include/footer.php'; ?>
+<?php include 'footer.php'; ?>
 <script>
-  
+
 </script>
 <!-- GSAP and ScrollTrigger CDN -->
 <script src="assets/js/jars-animate.js"></script>
